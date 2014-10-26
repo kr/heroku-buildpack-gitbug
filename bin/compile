@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pwd
+echo HEAD $(cat HEAD)
+git symbolic-ref HEAD
+git rev-parse HEAD
+git describe --tags --always
+git log -1
+true
